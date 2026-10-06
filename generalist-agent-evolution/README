@@ -1,0 +1,29 @@
+# EvoMan Generalist Agent Evolution
+
+This project investigates the evolution of generalist neural-network-controlled agents in the [EvoMan framework](https://github.com/karinemiras/evoman_framework).
+
+Unlike Task 1, where agents were trained against individual enemies, this task focuses on evolving agents that can perform well across multiple enemies.
+
+Two Genetic Algorithms are compared using the same evolutionary operators but different fitness functions.
+
+## Objective
+
+The goal is to evolve generalist agents using groups of EvoMan enemies and evaluate how well the agents generalize across different opponents.
+
+Two Genetic Algorithms are compared:
+
+- **GA1** – uses EvoMan's default fitness function.
+- **GA2** – uses a custom fitness function with a stronger time penalty.
+
+## Algorithms
+
+### GA1
+
+GA1 evaluates each individual against every enemy in the training group and uses the average of the default EvoMan fitness values.
+
+### GA2
+
+GA2 uses the custom fitness function:
+
+```text
+fitness = 100 - enemy_energy - 0.05 * time_alive
