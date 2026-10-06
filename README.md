@@ -55,11 +55,11 @@ The stronger time penalty encourages faster enemy elimination.
 
 Run GA1:
 
-python ga1_runner.py
+python GA1_runner.py
 
 Run GA2:
 
-python ga2_runner.py
+python GA2_runner.py
 
 Analyze the results:
 
