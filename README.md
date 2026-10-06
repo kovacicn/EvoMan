@@ -12,7 +12,9 @@ infrastructure used to evaluate the genetic algorithms in this project.
 Clone the EvoMan repository and ensure it is available in your Python
 environment before running the experiments.
 
-## EvoMan Genetic Algorithm Fitness Comparison
+## EvoMan Genetic Algorithm Fitness Comparison 
+
+- folder: ga-fitness-comparison
 
 This project investigates how fitness function design affects the evolution
 and performance of neural-network-controlled agents in the EvoMan framework.
