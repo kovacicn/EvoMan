@@ -1,0 +1,39 @@
+# EvoMan Genetic Algorithm Fitness Comparison
+
+This project investigates how the design of a fitness function influences
+the evolution and performance of specialist agents in the
+[EvoMan framework](https://github.com/karinemiras/evoman_framework).
+
+Two Genetic Algorithms are compared while using the same evolutionary
+operators and neural-network controller structure.
+
+## Objective
+
+The goal is to evolve specialist agents capable of defeating individual
+EvoMan enemies and to evaluate how different fitness functions affect
+their performance and convergence.
+
+The experiments are performed separately against:
+
+- Enemy 4
+- Enemy 6
+- Enemy 7
+
+## Algorithms
+
+### GA1
+
+GA1 uses the default EvoMan fitness function.
+
+It balances:
+
+- reducing enemy energy
+- preserving player energy
+- minimizing fight duration
+
+### GA2
+
+GA2 uses a custom fitness function with a stronger linear time penalty:
+
+```text
+fitness = 100 - enemy_energy - 0.05 * time_alive
